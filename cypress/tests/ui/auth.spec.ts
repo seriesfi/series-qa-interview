@@ -1,5 +1,4 @@
 import { User } from "../../../src/models";
-import { isMobile } from "../../support/utils";
 
 const apiGraphQL = `${Cypress.env("apiUrl")}/graphql`;
 
@@ -17,8 +16,8 @@ describe("User Sign-up and Login", function () {
     });
   });
 
-  it("should redirect unauthenticated user to signin page", function () {
-    expect(true).equal(true)
+  it("should redirect an unauthenticated user to the signin page", function () {
+    expect(true).equal(true);
   });
 
   it("should redirect to the home page after login", function () {
